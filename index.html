@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Pagină Rafael Gâju</title>
+
+    <link rel="stylesheet" href="stiluri.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        body {
+            min-height: 100vh;
+            min-height: 100dvh;
+            background-color: rgb(44, 62, 80);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        
+        h1 {
+            font-family: "Cinzel Decorative";
+            text-align: center;
+            color: rgb(58, 80, 91);
+        }
+
+        h3 {
+            text-align: center;
+            font-style: italic;
+            color: gray;
+        }
+
+        /* Fata de activitatea 2, am mutat clasa cartonaș în fisierul stiluri.css. 
+            Tododată am adus am modificat clasa fata de activitatea precedentă folosind o imagine drept bordură*/
+        
+        .container-poza {
+            margin: auto;
+            text-align: center;
+            border-color: rgb(201, 173, 107);
+            border-style: solid;
+            border-width: 3px;
+            height: 5cm;
+            width: 5cm;
+            border-radius: 0.5cm;
+            overflow: hidden;
+            box-shadow: 5px 5px 8px gray;
+            margin-bottom: 20px;
+        }
+        
+        /* Aici suprascriem unele setari din clasa banner-categorie definit în fisierul stiluri.css */
+
+        .banner-categorie {
+            background-image: linear-gradient(to right, rgb(186 194 193) 10%, rgba(0, 0, 0, 0) 85%);
+            color: rgb(54 66 70);
+            border-color:rgb(108 121 123);
+        }
+
+        .container-toate-datele {
+            margin: 10px;
+        }
+
+        .tabel-informatii {
+
+            border-collapse: collapse;
+            width: 100%;
+            box-shadow: 5px 5px 8px gray;
+        }
+
+        .tabel-informatii td {
+            border: 1px solid rgb(154, 154, 154);
+            padding: 5px;
+            border-top: none;
+            background-color: rgb(236, 240, 240);
+            font-family: "Gentium Book Plus";
+
+        }
+
+        .tabel-informatii td:first-child {
+            background-color: rgb(58, 80, 91);
+            color: rgb(236, 240, 240);
+            font-weight: bold;
+            font-family: "Cinzel";
+            width: 25%;
+        }
+
+        .tabel-studii {
+            border-collapse: collapse;
+            width: 100%;
+            box-shadow: 5px 5px 8px gray;
+        }
+
+        .tabel-studii td {
+            border: 1px solid rgb(154, 154, 154);
+            padding: 5px;
+            background-color: rgb(236, 240, 240);
+            font-family: "Gentium Book Plus";
+            text-align: center;
+
+        }
+
+        .tabel-studii thead th {
+            background-color: rgb(58, 80, 91);
+            color: rgb(236, 240, 240);
+            font-weight: bold;
+            font-family: "Cinzel";
+            border: 1px solid rgb(154, 154, 154);
+            border-top: none;
+            padding: 5px;
+
+        }
+
+        .linie-orizontala {
+            height: 2px;
+            background-color: rgb(201, 173, 107);
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            margin: 0%;
+            padding-left: 26px;
+        }
+
+        ol {
+            margin: 0%;
+            padding-left: 22px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="cartonas">
+        <h1>Pagina Mea Personală</h1>
+        <h3 style="margin-top: -20px;"> Activitatea 4 - Moduri de a scrie CSS</h3>
+        <div class="container-poza">
+            <img src="https://lh3.googleusercontent.com/d/1B4ALd3AWOlpz_xCjxgWJIX0TicpbhuxW" height="255"
+                title="Vă pup! 💖" alt="Poza de profil" style="margin-top: -50px;">
+        </div>
+
+        <!-- DATE PERSONALE -->
+
+
+        <div class="container-toate-datele">
+            <div class="banner-categorie">Date Personale</div>
+            <table class="tabel-informatii">
+                <tr>
+                    <td>Nume</td>           <!-- Aici modificăm font family inline la Eczar importat in fișierul stiluri.css -->
+                    <td style="color:rgb(88, 24, 13); font-family: Eczar; font-weight: bold; padding-left: 15px;">
+                        Rafael-Ionel
+                        Gâju</td>
+                </tr>
+                <tr>
+                    <td>Vârstă</td>
+                    <td style="padding-left: 15px;">31 de ani</td>
+                </tr>
+                <tr>
+                    <td>Oraș</td>
+                    <td style="padding-left: 15px;">Timișoara</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:rafaelgaju@gmail.com" style="margin-left: 10px;">rafaelgaju@gmail.com</a></td>
+                </tr>
+
+            </table>
+
+            <hr class="linie-orizontala">
+
+            <!-- STUDII -->
+
+            <div class="banner-categorie">Studii</div>
+            <table class="tabel-studii">
+                <thead>
+                    <th style="width: 28%;">Forma</th>
+                    <th style="width: 26%;">Perioada</th>
+                    <th>Studii</th>
+                </thead>
+                <tr>
+                    <td>Învățământ postliceal</td>
+                    <td>2014 - 2016</td>
+                    <td style="text-align: left;"><a href="https://www.scoalapolitie.ro/" target="_blank"
+                            style="margin-left: 10px;">Școala de
+                            Agenți de Poliție "Vasile
+                            Lascăr"
+                            din Câmpina
+                        </a></td>
+                </tr>
+                <tr>
+                    <td>Învățământ liceal</td>
+                    <td>2010 - 2014</td>
+                    <td style="text-align: left;"><a href="https://cniuliahasdeu.ro/" target="_blank"
+                            style="margin-left: 10px;">Colegiul Național
+                            "Iulia Hasdeu" din
+                            Lugoj</a></td>
+                </tr>
+                <tr>
+                    <td>Studiu individual</td>
+                    <td>2020 - Prezent</td>
+                    <td style="text-align: left;">
+                        <ul>
+                            <li type="disc"><a href="https://www.udemy.com/" target="_blank"> Udemy</a></li>
+                            <li type="disc"><a href="https://learn.unity.com/" target="_blank"> Unity learn</a></li>
+                            <li type="disc"><a href="https://www.sololearn.com/en/" target="_blank"> Sololearn</a></li>
+                            <li type="disc"><a href="https://fullstackopen.com/en/" target="_blank"> Full Stack Open -
+                                    University of Helsinki</a></li>
+                        </ul>
+                    </td>
+                </tr>
+
+            </table>
+
+            <hr class="linie-orizontala">
+
+            <!-- PASIUNI -->
+
+            <div class="banner-categorie">Pasiuni</div>
+            <table class="tabel-informatii">
+                <tr>
+                    <td>Tehnologie</td>
+                    <td>
+                        <ul>
+                            <li type="disc">Arhitecturi de rețea avansate. VLAN-uri, firewall granular, OPNsense,
+                                segmentare DMZ</li>
+                            <li type="disc">Automatizare și administrare Linux și Windows. Active Directory, PowerShell,
+                                deployment</li>
+                            <li type="disc">Unity, Git, C#, HTML, CSS, JavaScript, Node.js, Express, React, API,
+                                MariaDB,
+                                PostgreSQL</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CREAȚIE DIGITALĂ ȘI MULTIMEDIA</td>
+                    <td>
+                        <ul>
+                            <li type="square">Design grafic digital și pixel art. Adobe Photoshop, Aseprite</li>
+                            <li type="square">Editare video și post-producție. Adobe Premiere Pro</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby-uri</td>
+                    <td>
+                        <ol>
+                            <li type="1">Laborator personal de sisteme informatice </li>
+                            <li type="1">Jocuri video. Divertisment, design, dezvoltare și simulare</li>
+                            <li type="1">Proiecte cu microcontrolere. ESP32, senzori, relee, pompe, logică de control,
+                                feedback vizual</li>
+                            <li type="1">Media narativă</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Site preferat</td>
+                    <td><a href="https://music.youtube.com/" target="_blank" style="margin-left: 10px;">YouTube
+                            Music</a></td>
+                </tr>
+
+
+            </table>
+
+
+        </div>
+
+
+        <div>
+
+            <p style="color:rgb(201, 173, 107);position: absolute; margin-left: 550px; margin-top: 20px; ">Pagină realizată în HTML și CSS
+            </p>
+            <img src="https://lh3.googleusercontent.com/d/1T0TQepRJoTBMp7wK65CRoDy67agCvRA8" height="67"
+                alt="ornament subsol" style="transform: scaleX(-1) translateX(-5px) translateY(5px);">
+        </div>
+
+    </div>
+</body>
+
+</html>
