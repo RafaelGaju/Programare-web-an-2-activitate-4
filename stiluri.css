@@ -18,7 +18,7 @@
             box-shadow: 5px 5px 10px rgb(20, 20, 29);
         }
 
-        .banner-categorie { /* aici modificăm banner-categorie față de tema 2 dar vom aduce modificări globale în index.html */
+        .banner-categorie { /* aici modificăm banner-categorie față de tema 2 dar vom aduce modificări globale în index.html care vor suprascrie cateva din aceste setări*/
             background-image: linear-gradient(to right, rgb(208, 200, 203) 10%, rgba(0, 0, 0, 0) 85%);
             color: rgb(88, 20, 40);
             border-left: 7px solid rgb(88, 20, 40);
